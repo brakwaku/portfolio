@@ -3,6 +3,17 @@ import initSr from './js/sr';
 import './style/main.scss';
 import MyResume from './assets/resume.pdf';
 
+// function addResume() {
+//   let theElement = document.getElementById('#myResume');
+//   theElement.href = url(MyResume);
+// };
+
+// function addResume(MyResume) {
+//   const elements = document.getElementsByClassName('.myResume');
+  
+//   elements.href = url(MyResume);
+// };
+
 function addResume(MyResume) {
   const elements = document.getElementsByClassName('.cta-btn--resume');
   for(let el of elements){

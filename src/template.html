@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
   <!-- <link rel="icon" href="https://adoring-torvalds-b6ba20.netlify.app/favicon.ico?v=2" /> -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
   <!-- Put here your site title -->
   <title>Theophilus Appau-Nkansah | Developer</title>
@@ -74,7 +78,7 @@
               pictures of people which groomed me to pay good attention to details.
             </p>
             <span class="d-flex mt-3">
-              <a target="_blank" class="cta-btn cta-btn--resume" href="./assets/resume.pdf">
+              <a target="_blank" class="cta-btn cta-btn--resume" id="myResume" onclick="addResume()" href="./assets/resume.pdf">
                 View Resume
               </a>
               </h1>
@@ -202,6 +206,14 @@
             </div>
           </div>
         </div>
+        <div class="other-projects container animate__animated animate__fadeInUpBig">
+          <b><h2>OTHER PROJECTS</h2></b><hr>
+          <ul>
+            <li><a target="_blank" href="https://github.com/arrowalker3/EquipMe">EquipMe</a></li>
+            <li><a target="_blank" href="#">Gradient Preview</a></li>
+            <li><a target="_blank" href="#">JS Array Helper</a></li>
+          </ul>
+        </div>
         <!-- /END Project -->
       </div>
     </div>
@@ -254,6 +266,7 @@
       
       <p class="footer__text">
         © 2020
+        - Kwaku Appau-Nkansah
         <!-- - Template developed by <a href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a> -->
         </a>
       </p>

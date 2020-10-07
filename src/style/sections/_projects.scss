@@ -86,3 +86,34 @@
   filter: none;
   -webkit-filter: grayscale(0);
 }
+
+.other-projects h2 {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.other-projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.other-projects ul>li {
+  list-style: none;
+  padding-right: 50px;
+}
+
+.other-projects ul>li a {
+  text-decoration: none;
+  opacity: .5;
+  color: rgb(103, 103, 109);
+}
+
+.other-projects ul>li a:hover {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+}
+
+hr {
+  width: 40%;
+}
