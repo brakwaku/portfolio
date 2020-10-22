@@ -1,25 +1,8 @@
 import initTilt from './js/tilt';
 import initSr from './js/sr';
 import './style/main.scss';
-import MyResume from './assets/resume.pdf';
+import MyResume from './assets/KwakuResume.pdf';
 
-// function addResume() {
-//   let theElement = document.getElementById('#myResume');
-//   theElement.href = url(MyResume);
-// };
-
-// function addResume(MyResume) {
-//   const elements = document.getElementsByClassName('.myResume');
-  
-//   elements.href = url(MyResume);
-// };
-
-function addResume(MyResume) {
-  const elements = document.getElementsByClassName('.cta-btn--resume');
-  for(let el of elements){
-    el.href = url(MyResume);
-  }
-};
 
 $('a[href^="#"]').on('click', function(event) {
   var target = $(this.getAttribute('href'));
@@ -36,7 +19,13 @@ $('a[href^="#"]').on('click', function(event) {
   }
 });
 
-
-addResume();
+function addResume(MyResume) {
+  const elements = document.getElementsByClassName('.cta-btn--resume');
+  for(let el of elements){
+    el.href = url(MyResume);
+    console.log('Url: ' + el);
+  }
+}
 initSr();
 initTilt();
+addResume();
